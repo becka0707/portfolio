@@ -1,0 +1,56 @@
+#recommendation{
+	padding: 120px 0;
+}
+
+#recommendation .recommendation-item{
+	max-width: 700px;
+    text-align: center;
+    margin: auto;
+}
+
+#recommendation .recommendation-item p{
+	font-size: 22px;
+	font-style: italic;
+}
+
+#recommendation .recommendation-item p:last-child{
+	text-align: right;
+	font-weight: 500;
+	padding-top: 14px;
+}
+
+#recommendation .headline{
+  font-size: 24px;
+  text-align: center;
+  clear: both;
+  color: #232323;
+  padding-bottom: 30px;
+}
+
+#recommendation .slick-initialized .slick-slide{
+	box-shadow: none !important;
+}
+
+#recommendation .slick-current{
+	transform: scale(1) !important;
+}
+
+#recommendation .slider,
+#recommendation .slick-dots{
+	padding: 0 !important;
+}
+
+#recommendation .slick-list{
+	padding-bottom: 0;
+}
+
+@media(max-width: 769px){
+	#recommendation{
+		padding: 80px 0;
+	}
+	@media(max-width: 500px){
+		#recommendation .recommendation-item p{
+			font-size: 20px;
+		}
+	}
+}

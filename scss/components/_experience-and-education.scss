@@ -1,0 +1,212 @@
+#experience-and-education{
+	background: #232323;
+}
+
+#experience-and-education .milestone{
+	font-family: sans-serif;
+	text-align: center;
+	color: #fff;
+	margin: auto;
+}
+#experience-and-education .experience{
+
+}
+#experience-and-education .item-milestone{
+	display: flex;
+	align-items: center;
+	transform: translateY(-100%);
+	-webkit-clip-path: polygon(100% 100%, 0 100%, 0 100%, 100% 100%);
+	clip-path: polygon(100% 100%, 0 100%, 0 100%, 100% 100%);
+}
+#experience-and-education .item-milestone div{
+	padding: 24px;
+}
+#experience-and-education .left-milestone{
+	text-align: right;
+}
+#experience-and-education .left-milestone p{
+	transform: translateX(-100%);
+	-webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+	clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+#experience-and-education .right-milestone p{
+	transform: translateX(-100%);
+	-webkit-clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+	clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+#experience-and-education .right-milestone{
+	text-align: left;
+}
+#experience-and-education .line-milestone-right{
+	border-left: 2px solid $main-color;
+	margin-right: 2px;
+}
+#experience-and-education .line-milestone-left{
+	border-right: 2px solid $main-color;
+	margin-left: 2px;
+}
+#experience-and-education .right-dot:before{
+	content: '';
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	background: #333;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	left: -7px;
+	top: 44%;
+	transform: scale(0);
+	animation: scaleIn .5s forwards ease-in-out;
+	animation-delay: .4s;
+}
+#experience-and-education .left-dot:before{
+	content: '';
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	background: #333;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	right: -7px;
+	top: 44%;
+	transform: scale(0);
+	animation: scaleIn .5s forwards ease-in-out;
+	animation-delay: .4s;
+}
+
+#experience-and-education .headline{
+	transform: translateY(-100%);
+	-webkit-clip-path: polygon(100% 100%, 0 100%, 0 100%, 100% 100%);
+	clip-path: polygon(100% 100%, 0 100%, 0 100%, 100% 100%);
+}
+
+#experience-and-education .headline h2{
+	font-size: 1.8rem;
+	margin: 24px 0;
+}
+
+#experience-and-education .content{
+	padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#experience-and-education .item-milestone div p{
+	margin: auto;
+	font-size: 1.25rem;
+}
+
+#experience-and-education .item-milestone div p:nth-child(2),
+#experience-and-education .item-milestone div p:nth-child(3){
+	font-size: 18px;
+}
+
+#experience-and-education .item-milestone div p:nth-child(3){
+	font-style: italic;
+}
+
+.e-bottom-open{
+	animation: bottom-open .8s forwards ease-in-out;
+}
+.e-left-open{
+	animation: left-open .8s forwards ease-in-out;
+	animation-delay: .4s;
+}
+
+.e-right-open{
+	animation: right-open .8s forwards ease-in-out;
+	animation-delay: .4s;
+}
+
+@keyframes scaleIn{
+	0%{
+		transform: scale(0);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+
+@keyframes left-open{
+	0%{
+		transform: translateX(100%);
+		-webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+		clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+	}
+	100%{
+		transform: translateX(0%);
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+	}
+}
+
+@keyframes right-open{
+	0%{
+		transform: translateX(-100%);
+		-webkit-clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+		clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+
+	}
+	100%{
+		transform: translateX(0%);
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+	}
+}
+
+@media(max-width: 1025px){
+	#experience-and-education .headline,
+	#experience-and-education .line-milestone-left,
+	#experience-and-education .line-milestone-right,
+	#experience-and-education .left-milestone p,
+	#experience-and-education .right-milestone p,
+	#experience-and-education .item-milestone{
+	    transform: translateY(0%);
+	    -webkit-clip-path: unset;
+		clip-path: unset;
+	}
+	#experience-and-education .content{
+		padding-bottom: 100px;
+		padding-top: 100px;
+	}
+}
+
+@media(max-width: 568px){
+	#experience-and-education .line-milestone-left:before,
+	#experience-and-education .line-milestone-right:before{
+		content: '';
+		position: absolute;
+		width: 12px;
+		height: 12px;
+		background: #333;
+		border: 2px solid #fff;
+		border-radius: 50%;
+		left: -7px;
+		top: 44%;
+	}
+	#experience-and-education .left-milestone{
+		text-align: left;
+	}
+	#experience-and-education .line-milestone-left{
+		border-left: 2px solid $main-color;
+		border-right: none;
+		margin-left: 0px;
+	}
+	#experience-and-education .line-milestone-right{
+		margin-right: 0;
+	}
+	#experience-and-education .content{
+	padding-top: 60px;
+	padding-bottom: 60px;
+	}
+	#experience-and-education .headline,
+	#experience-and-education .left-milestone p,
+	#experience-and-education .right-milestone p,
+	#experience-and-education .item-milestone,
+	#experience-and-education .right-dot:before,
+	#experience-and-education .left-dot:before{
+		transform: translateY(0%);
+		transform: scale(1);
+		-webkit-clip-path: unset;
+		clip-path: unset;
+	}
+}

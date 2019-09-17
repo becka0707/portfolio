@@ -1,0 +1,152 @@
+#skills{
+	background: #212121;
+	padding: 80px 0;
+}
+
+#skills .headline{
+  font-size: 26px;
+  text-align: center;
+  clear: both;
+  color: #fff;
+  padding-bottom: 60px;
+}
+
+#skills #chart{
+  float: left;
+}
+
+#skills .skills-item{
+  display: flex;
+  color: #fff;
+  align-items: center;
+}
+
+#skills .skills-item label{
+  margin: 0;
+  width: 150px;
+  font-size: 1.25rem;
+  padding-bottom: 1rem;
+}
+
+#skills .skills-item div{
+  width: calc(100% - 150px);
+}
+
+#skills .skills-item span{
+  height: 4px;
+  border-radius: 4px;
+  background: $main-color;
+  display: block;
+}
+
+#skills .skills-item .html{  
+  width: 100%;
+}
+#skills .skills-item .css{  
+  width: 100%;
+}
+#skills .skills-item .bootstrap{
+  width: 100%;
+}
+#skills .skills-item .javascript{
+  width: 70%;
+}
+#skills .skills-item .jquery{
+  width: 70%;
+}
+#skills .skills-item .reactjs{
+  width: 50%;
+}
+#skills .skills-item .redux{
+  width: 50%;
+}
+#skills .skills-item .photoshop{
+  width: 90%;
+}
+
+#skills .content{
+  overflow: auto;
+}
+
+#skills .radar{
+  color: #fff;
+  height: 400px;
+  width: 462px;
+  position: relative;
+}
+#skills .radar svg{
+  position: absolute;
+  top: 35px;
+  left: 65px;
+}
+#skills .radar p:nth-child(1){
+  position: absolute;
+  top: 4px;
+  left: calc(50% - 24px);
+}
+#skills .radar p:nth-child(2){
+  position: absolute;
+  left: 0;
+  top: 34%;
+}
+#skills .radar p:nth-child(3){
+  position: absolute;
+  bottom: 0%;
+  left: 16%;
+}
+#skills .radar p:nth-child(4){
+  position: absolute;
+  bottom: 0%;
+  right: 12%;
+}
+#skills .radar p:nth-child(5){
+  position: absolute;
+  right: 0;
+  top: 34%;
+}
+
+@media(max-width: 1200px){
+  #skills{
+    padding: 80px 0;
+  }
+  #skills #chart{
+    float: none;
+    margin: auto;
+    display: block;
+    margin-bottom: 50px;
+  }
+  #skills .col-xs-12:last-child{
+    max-width: 800px;
+    margin: auto;
+  }
+  #skills .headline{
+    padding-bottom: 40px;
+  }
+  @media(max-width: 500px){
+    #skills .radar{
+      width: 300px;
+      height: 260px;
+    }
+    #skills .radar svg{
+      left: 50px;
+    }
+    #skills .radar p:nth-child(2){
+      left: -10px;
+    }
+    #skills .radar p:nth-child(1){
+      left: calc(50% - 30px);
+    }
+    #skills .radar p:nth-child(5){
+      right: 4px;
+    }
+    #skills .radar p:nth-child(3){
+      left: 8%;
+    }
+    #skills .radar p:nth-child(4){
+      right: 8%;
+    }
+    #skills #chart{
+      margin-bottom: 44px;
+    }
+  }
+}

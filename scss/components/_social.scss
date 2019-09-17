@@ -1,0 +1,33 @@
+#social{
+	position: fixed;
+	left: 0;
+	top: calc(50% - 80px);
+	color: #fff;
+	background: rgba(0, 0, 0, .5);
+	display: grid;
+	text-align: center;
+	padding: 15px;
+	padding-right: 10px;
+	border-top-right-radius: 50%;
+	border-bottom-right-radius: 50%;
+	transform: translateX(-55px);
+	transition: .7s ease-in-out;
+}
+
+#social a{
+	color: #ddd;
+	text-decoration-style: none;
+	padding: 8px 4px;
+	transition: .25s;
+}
+
+#social a:hover{
+	transform: scale(1.35);
+	color: $main-color;
+}
+
+@media(max-width: 769px){
+	#social{
+		display: none;
+	}
+}

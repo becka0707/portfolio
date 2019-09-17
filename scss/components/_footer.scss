@@ -1,0 +1,98 @@
+#footer{
+	background: #232323;
+	padding: 80px 0;
+	padding-bottom: 20px;
+	color: #fff;
+}
+
+#footer .headline{
+  font-size: 24px;
+  text-align: center;
+  clear: both;
+  color: #fff;
+  padding-bottom: 60px;
+}
+
+#footer .footer-item a div{
+	display: inline-flex;
+	align-items: center;
+	padding-bottom: 18px;
+	font-size: 18px;
+	color: #ccc;
+	transition: .25s;
+}
+
+#footer .footer-item a div:hover{
+	color: #fff;
+}
+
+#footer .footer-item i{
+	padding-right: 20px;
+	margin: 0;
+	font-size: 20px;
+}
+
+#footer .footer-item p{
+	margin: 0;
+}
+
+#footer form textarea{
+	resize: none;
+}
+
+#footer form input,
+#footer form textarea{
+	width: 100%;
+	background: #aaa;
+	border: 1px #aaa solid;
+	margin: 8px 0;
+	padding: 8px;
+	border-radius: 3px;
+}
+
+#footer form textarea{
+	height: 100px;
+}
+
+#footer form input[type="submit"]{
+	background: #232323;
+	color: $main-color;
+	border: 1px solid $main-color;
+	width: 135px;
+	padding: 6px;
+	float: right;
+	cursor: pointer;
+	transition: .25s;
+}
+
+#footer form input[type="submit"]:hover{
+	color: #232323;
+	background: $main-color;
+}
+
+#footer .form{
+	padding-left: 10%;
+}
+
+#footer .copyright{
+	text-align: center;
+	color: #777;
+	clear: both;
+    display: block;
+    margin: auto;
+    padding-top: 50px;
+}
+
+#footer .copyright p{
+	margin: 0;
+}
+
+@media(max-width: 500px){
+	#footer .headline{
+		padding-bottom: 50px;
+	}
+	#footer .form{
+		padding: 0 15px;
+		padding-top: 30px;
+	}
+}

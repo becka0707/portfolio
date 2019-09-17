@@ -1,0 +1,318 @@
+#header{
+	height: 100%;
+	width: 100%;
+	background: url('../img/workspace.jpg') no-repeat;
+	background-size: cover;
+	background-position: center top;
+}
+
+#header .content{
+	padding: 0 10px;
+}
+
+#header .custom-nav{
+	padding: 20px 30px;
+	height: auto;
+	overflow-y: auto;
+	position: fixed;
+	width: 100vw;
+	overflow: hidden;
+	transition: .25s;
+	z-index: 9;
+}
+
+#header .scrolled{
+	background: rgba(0,0,0,.8);
+	padding: 0 30px;
+	transition: .25s;
+}
+
+#header .custom-nav .content{
+	height: 100%;
+	padding: 10px 20px;
+	display: flex;
+	align-items: center;
+	max-width: 1200px;
+}
+
+#header .menu-color a{
+	color: rgba(255,255,255,.55) !important;
+}
+
+#header .menu-color:last-child a{
+	border: 1px solid rgba(225, 189, 71, .55) !important;
+}
+
+#header .custom-nav .logo-content{
+	width: 50px;
+	float: left;
+}
+
+#header .custom-nav .menu-content{
+	width: calc(100% - 50px);
+}
+
+#header .custom-nav img{
+	width: 50px;
+}
+
+#header .custom-nav ul{
+	color: #fff;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	padding: 0;
+	float: right;
+	font-weight: 500;
+	margin: 0;
+	height: 100%;
+	font-size: 16px;
+}
+
+#header .custom-nav ul li a{
+	padding: 0 20px;
+	transition: .25s;
+	color: #fff;
+}
+
+#header .my-name{
+    height: 100%;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    color: #fff;
+    align-items: flex-end;
+}
+
+#header .my-name div{
+	position: relative;
+    bottom: 54px;
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+#header .name-anim{
+	animation: my-name 1.3s forwards;
+    animation-delay: 0.4s;
+}
+
+#header .my-name div h1{
+	font-size: 64px;
+	margin: 0;
+}
+
+#header .my-name div small{
+	font-size: 22px;
+	color: #ddd;
+}
+
+#header .my-name div span{
+	transition: .25s;
+}
+
+#header .mobile-menu{
+	display: none;
+	overflow: auto;
+    height: 32px;
+    width: 30px;
+    float: right;
+    cursor: pointer;
+}
+
+#header .mobile-menu .hamburger{
+	height: 3px;
+	width: 30px;
+	background: #fff;
+	float: right;
+	margin-top: 15px; 
+}
+
+#header .mobile-menu .hamburger:before{
+	content: '';
+	position: absolute;
+	height: 3px;
+	width: 26px;
+	background: #fff;
+	margin-top: 10px;
+	margin-left: 4px;
+}
+
+#header .mobile-menu .hamburger:after{
+	content: '';
+	position: absolute;
+	height: 3px;
+	width: 26px;
+	background: #fff;
+	margin-top: -10px;
+	margin-left: 4px;
+}
+
+#header .resume{
+	padding: 8px 16px !important;
+	border: 1px solid $main-color;
+	border-radius: 4px;
+	color: #fff;
+	transition: .25s;
+	background: transparent;
+}
+
+#header .resume:hover{
+	color: #232323 !important;
+	background: rgba(237,201,92,1);
+	background: -moz-linear-gradient(left, rgba(237,201,92,1) 0%, rgba(225,189,71,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(237,201,92,1)), color-stop(100%, rgba(225,189,71,1)));
+	background: -webkit-linear-gradient(left, rgba(237,201,92,1) 0%, rgba(225,189,71,1) 100%);
+	background: -o-linear-gradient(left, rgba(237,201,92,1) 0%, rgba(225,189,71,1) 100%);
+	background: -ms-linear-gradient(left, rgba(237,201,92,1) 0%, rgba(225,189,71,1) 100%);
+	background: linear-gradient(to right, rgba(237,201,92,1) 0%, rgba(225,189,71,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edc95c', endColorstr='#e1bd47', GradientType=1 );
+}
+
+/* Name Animation */
+.animation-name {
+  text-transform: uppercase;
+  cursor: pointer;
+  padding-left: 0.25em;
+}
+.animation-name span {
+  display: inline-block;
+  position: relative;
+  padding-right: 0.06em;
+  padding-top: 0.7em;
+}
+.animation-name span.animate {
+  animation: bounce 1s ease-in-out;
+  animation-iteration-count: 1;
+}
+.animation-name span.animate:nth-child(2n) {
+  animation: bounce2 1s ease-in-out;
+}
+.animation-name span.animate:nth-child(3n) {
+  animation: bounce3 1s ease-in-out;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0) rotate(0);
+    color: #fff;
+  }
+  25% {
+    transform: translateY(-0.4em) rotate(30deg);
+    color: $main-color;
+  }
+  50% {
+    transform: translateY(0.25em) rotate(-5deg);
+    color: #fff;
+  }
+  75% {
+    transform: translateY(-0.1em) rotate(2deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}
+@keyframes bounce2 {
+  0% {
+    transform: translateY(0) rotate(0);
+    color: #fff;
+  }
+  25% {
+    transform: translateY(-0.4em) rotate(-10deg);
+    color: $main-color;
+  }
+  50% {
+    transform: translateY(0.25em) rotate(30deg);
+    color: #fff;
+  }
+  75% {
+    transform: translateY(-0.1em) rotate(-10deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}
+@keyframes bounce3 {
+  0% {
+    transform: translateY(0) rotate(0);
+    color: #fff;
+  }
+  25% {
+    transform: translateY(-0.4em) rotate(30deg);
+    color: $main-color;
+  }
+  50% {
+    transform: translateY(0.25em) rotate(-10deg);
+    color: #fff;
+  }
+  80% {
+    transform: translateY(-0.1em) rotate(5deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}
+
+@keyframes my-name{
+	0%{
+		opacity: 1;
+		transform: translateX(100%);
+		-webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+		clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(0%);
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+	}
+}
+
+@media(max-width: 1210px){
+	#header .my-name div{
+		padding-right: 20px;
+	}
+	#header .custom-nav .content{
+		padding: 10px 0;
+	}
+	.content{
+		padding: 0 35px;
+	}
+}
+
+@media(max-width: 769px){
+	#header .custom-nav ul{
+		display: none;
+	}
+	#header .mobile-menu{
+		display: block;
+	}
+}
+
+@media(max-width: 500px){
+	.content{
+		padding: 0 15px;
+	}
+	#header .my-name div h1 {
+	    font-size: 66px;
+	    line-height: .9;
+	    padding-bottom: 14px;
+	}
+	#header .my-name div small {
+	    font-size: 16px;
+	}
+	#header .custom-nav{
+		padding: 15px;
+	}
+	#header .scrolled{
+		padding: 0 15px;
+	}
+	#header .my-name div h1{
+		font-size: 60px;
+		padding-bottom: 10px;
+	}
+	#header .my-name div small{
+		font-size: 14.5px;
+	}
+	#header .my-name div{
+		padding-right: 5px;
+	}
+}
