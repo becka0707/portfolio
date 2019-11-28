@@ -3019,7 +3019,7 @@ var RadarChart = {
       maxValue: 100,
       radians: 2 * Math.PI,
       opacityArea: 0.25,
-      color: d3.rgb("#e1bd47")
+      color: d3.rgb("#93c1c4")
     };
 
     if (window.matchMedia('(max-width: 500px)').matches) {
