@@ -518,8 +518,8 @@
 
 							<div>
 								<button id="my-form-button">Send</button>
-								<p id="my-form-status"></p>
 							</div>
+							<p id="my-form-status"></p>
 						</form>
 					</div>
 
@@ -606,9 +606,9 @@
 			var status = document.getElementById("my-form-status");
 			
 			function success() {
-			form.reset();
-			button.style = "display: none ";
-			status.innerHTML = "Your message has been sent successfully.";
+				form.reset();
+				button.style = "display: none ";
+				status.innerHTML = "Your message has been sent successfully.";
 			}
 
 			function error() {
