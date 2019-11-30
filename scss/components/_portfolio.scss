@@ -528,6 +528,10 @@
         #portfolio .slider .item-portfolio .item-content{
           min-height: 234px;
         }
+        .slick-list {
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+        }
 
         @media(max-width: 350px){
           .slick-initialized .slick-slide{

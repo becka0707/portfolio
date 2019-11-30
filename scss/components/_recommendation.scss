@@ -48,6 +48,10 @@
 	#recommendation{
 		padding: 80px 0;
 	}
+	#recommendation .slick-initialized .slick-slide {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
 	@media(max-width: 500px){
 		#recommendation .recommendation-item p{
 			font-size: 20px;
